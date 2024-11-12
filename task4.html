@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        sum=0;
+        function average(arr){
+            for(i=0;i<arr.length;i++){
+                sum+=arr[i];
+                result=sum/arr.length;
+            }
+            console.log("Average is: "+result);
+        }
+        average([4,6,3,7,2,8]);
+        average([9,4,1,6]);
+        average([6,4,3,5,4]);
+    </script>
+</body>
+</html>

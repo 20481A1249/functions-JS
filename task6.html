@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertTemperature(temp,scale){
+            if(scale=='C'){
+                result=(temp-32)*5/9;
+                console.log("Converted Temp is: "+result);
+            }
+            else if(scale=='F'){
+                result=(temp*9/5)+32;
+                console.log("Converted Temp is: "+result);
+            }   
+            else{
+                console.log("Invalid scale. Use 'C' for Celsius or 'F' for Fahrenheit.")
+            }
+        }
+        convertTemperature(80,'F');
+        convertTemperature(80,'C');
+        convertTemperature(65,'F');
+        convertTemperature(65,'C');
+        convertTemperature(80,'f');
+        convertTemperature(80,'c');
+    </script>
+</body>
+</html>
